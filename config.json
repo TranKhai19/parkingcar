@@ -1,0 +1,29 @@
+{
+    "model": {
+        "path": "runs/detect/train/weights/best.pt",
+        "confidence_threshold": 0.5,
+        "iou_threshold": 0.45
+    },
+    "parking": {
+        "zones_file": "bouding_box.json",
+        "occupied_color": [0, 0, 255],
+        "available_color": [0, 255, 0],
+        "zone_transparency": 0.2
+    },
+    "video": {
+        "output_codec": "mp4v",
+        "fallback_codec": "XVID",
+        "max_file_size_mb": 500
+    },
+    "display": {
+        "show_detection_boxes": true,
+        "show_zone_labels": false,
+        "show_progress": true,
+        "font_scale": 0.8
+    },
+    "processing": {
+        "skip_frames": 0,
+        "batch_size": 1,
+        "use_gpu": true
+    }
+}
